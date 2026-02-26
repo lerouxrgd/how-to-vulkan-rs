@@ -1,0 +1,16 @@
+[package]
+name = "how-to-vulkan-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+ash = "0.38"
+glam = "0.32"
+gpu-allocator = { version = "0.28", default-features = false, features = [
+  "std",
+  "vulkan",
+] }
+ktx2 = "0.4"
+sdl3 = { version = "0.17", features = ["ash"] }
+tobj = { version = "4", default-features = false }
