@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 anyhow = "1"
 ash = "0.38"
+bytemuck = "1"
 glam = "0.32"
 gpu-allocator = { version = "0.28", default-features = false, features = [
   "std",
@@ -13,4 +14,5 @@ gpu-allocator = { version = "0.28", default-features = false, features = [
 ] }
 ktx2 = "0.4"
 sdl3 = { version = "0.17", features = ["ash"] }
+slang = { package = "shader-slang", version = "0.1" }
 tobj = { version = "4", default-features = false }
